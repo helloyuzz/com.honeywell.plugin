@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.honeywell.plugin"
+        version="1.0.0">
+
+  <name>HoneywellScanner</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/honeywellscanner.js" target="js/honeywellscanner.js"/>
+
+  <js-module src="www/honeywellscanner.js" name="honeywellscanner">
+    <clobbers target="honeywellscanner" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="HoneywellScanner">
+        <param name="android-package" value="com.honeywell.plugin.HoneywellScanner"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/HoneywellScanner.java" target-dir="src/com/honeywell/plugin/"/>
+    <source-file src="src/android/HoneywellReceiver.java" target-dir="src/com/honeywell/plugin/"/>
+  </platform>
+
+</plugin>
