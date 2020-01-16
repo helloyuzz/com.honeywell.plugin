@@ -11,7 +11,7 @@
 	
 	
 #### Config File 1:  
-plugins\android.json
+<project_root>\plugins\android.json
 ```xml
 "dependent_plugins": {
     "com.honeywell.plugin": {
@@ -21,7 +21,7 @@ plugins\android.json
 ```
 
 #### Config File 2:  
-src\app.component.ts
+<project_root>\src\app.component.ts
 ```javascript
 InitScanner() {
     honeywellscanner.scan((barcode) => {
@@ -31,7 +31,7 @@ InitScanner() {
 ```
 
 #### Config File 3:  
-<project>\angular.json
+<project_root>\angular.json
 ```xml
 "scripts": [
       "plugins/com.honeywell.plugin/www/honeywellscanner.js"
