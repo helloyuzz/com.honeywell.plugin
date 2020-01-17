@@ -44,3 +44,11 @@ cordova platform rm android
 cordova platform add android
 
 ionic cordova run android
+
+/*
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install --global --production windows-build-tools   
+cnpm install  
+cnpm install -g ionic@5.0.2
+cnpm install -g cordova
+*/
