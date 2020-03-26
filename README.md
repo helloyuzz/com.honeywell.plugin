@@ -41,7 +41,8 @@ InitScanner() {
 Run and Build:
 ```javascript
 cordova platform rm android 
-cordova platform add android
+cordova platform add android 
+// ionic cordova platform add android 
 
 ionic cordova run android
 
