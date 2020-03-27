@@ -42,6 +42,9 @@ Run and Build:
 ```javascript
 cordova platform rm android 
 cordova platform add android 
+
+
+(Error:Current working directory is not a Cordova-based project.) 
 // ionic cordova platform add android 
 
 ionic cordova run android
