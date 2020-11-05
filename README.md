@@ -40,8 +40,8 @@ InitScanner() {
 
 Run and Build:
 ```javascript
-cordova platform rm android 
-cordova platform add android 
+ionic cordova platform rm android 
+ionic cordova platform add android 
 
 
 (Error:Current working directory is not a Cordova-based project.) 
@@ -50,9 +50,22 @@ cordova platform add android
 ionic cordova run android
 
 /*
+npm config set registry https://registry.npm.taobao.org
+
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm install --global --production windows-build-tools   
+
+// Powershell as Administrator
+cnpm install --global --production windows-build-tools
+
+npm i -g native-run
+
 cnpm install  
 cnpm install -g ionic@5.0.2
-cnpm install -g cordova
+cnpm install -g cordova@9.0.0
 */
+```
+
+#### 解决 cnpm : 无法加载文件 C:\xxx\cnpm.ps1，因为在此系统上禁止运行脚本。（Power shell as Administrator权限）:
+
+set-ExecutionPolicy RemoteSigned，选择A即可
+
